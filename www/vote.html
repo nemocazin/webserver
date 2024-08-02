@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vote pour ton pilote favori</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 50%;
+            border: 2px solid #333;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        figcaption {
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Vote pour ton pilote favori</h1>
+
+<!-- Disposition des images -->
+<table>
+    <tr>
+        <td>
+            <figure>
+                <img src="../pictures/driver1.jpg" alt="Pilote 1" width="200" height="200">
+                <figcaption>Michael Schumacher</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                <img src="../pictures/driver2.jpg" alt="Pilote 2" width="200" height="200">
+                <figcaption>Lewis Hamilton</figcaption>
+            </figure>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <figure>
+                <img src="../pictures/driver3.jpg" alt="Pilote 3" width="200" height="200">
+                <figcaption>Max Verstappen</figcaption>
+            </figure>
+        </td>
+        <td>
+            <figure>
+                <img src="../pictures/driver4.jpg" alt="Pilote 4" width="200" height="200">
+                <figcaption>Alain Prost</figcaption>
+            </figure>
+        </td>
+    </tr>
+</table>
+
+<!-- Formulaire pour le vote -->
+<form action="thanks.html" method="get">
+    <p>Choisis ton pilote favori :</p>
+    <select name="reponse">
+        <option value="1">Michael Schumacher</option>
+        <option value="2">Lewis Hamilton</option>
+        <option value="3">Max Verstappen</option>
+        <option value="4">Alain Prost</option>
+    </select>
+
+    <input type="submit" value="Vote">
+</form>
+
+</body>
+</html>
